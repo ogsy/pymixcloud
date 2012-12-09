@@ -33,12 +33,12 @@ class Mixcloud:
         return self._get(['categories', category])
         
     def user_cloudcasts(self, user):
-        limit = 100        
+        limit = 100       
         results = []
         next = BASE_URL + user + '/cloudcasts/'
         
         while next:
-            r = self.requests.get(url, {'limit': limit})
+            r = self.requests.get(next, params={'limit': limit})
             r.raise_for_status()
                 
             results.extend(r.json['data'])
