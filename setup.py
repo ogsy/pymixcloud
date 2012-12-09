@@ -8,6 +8,9 @@ setup(
     author_email = "ogsy@ogsy.org",
     url = "https://github.com/ogsy/pymixcloud",
     download_url = "TODO",
+    install_requires=[
+		'requests',
+	],
     keywords = ["mixcloud", "api", "music"],
     classifiers = [
         "Development Status :: 4 - Beta",
