@@ -3,7 +3,7 @@ import requests
 BASE_URL = 'http://api.mixcloud.com/'
 
 class Mixcloud:
-    def __init__(requests_module=requests):
+    def __init__(self, requests_module=requests):
         self.requests = requests
         
     def _get(self, params=[]):
