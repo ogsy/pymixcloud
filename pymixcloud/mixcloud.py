@@ -6,9 +6,9 @@ class Mixcloud:
     def __init__(self, requests_module=requests):
         self.requests = requests
         
-    def _get(self, params=[]):
-        params.append['']
-        '/'.join([BASE_URL].extend(params))
+    def _get(self, components=[]):
+        components.append['']
+        '/'.join([BASE_URL].extend(components))
         
         r = self.requests.get(url)
         r.raise_for_status()
