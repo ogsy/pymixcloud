@@ -30,4 +30,4 @@ class Mixcloud:
         return self._get(['track', artist, track])
         
     def category(self, category):
-        return self._get(['category', category])
+        return self._get(['categories', category])
